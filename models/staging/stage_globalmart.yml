@@ -7,4 +7,4 @@ models:
       - name: orderid
         description: primary key for stage orders
       - name: shipmode
-        description: '{{docs("shipmode")}}''
+        description: '{{doc("shipmode")}}'
