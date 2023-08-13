@@ -2,14 +2,19 @@ version: 2
 
 sources:
   - name: globalmart
+    description: a clone of snowflake data base
     database: raw
     schema: globalmart
     tables:
-      - name: CUSTOMER
-      - name: ORDERS
+      - name: customer
+        description: raw customer table
+      - name: orders
+        description: raw orders table
         columns:
           - name: orderid
+            description: primary key for orders
             tests:
               - unique
-              - not_null:
-      - name: PRODUCT
+              - not_null
+      - name: product
+        description: raw product table
